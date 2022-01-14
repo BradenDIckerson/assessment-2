@@ -30,7 +30,14 @@
     'kids'
 */
 
-//CODE HERE
+const pizza = {
+    name: 'Cheesy Madness', 
+    price: '17.99',
+    category: 'Heavyweight appetizer',
+    popularity: '7.5/10',
+    rating: '4 stars',
+    tags: 'For: Heavyweight children due to cheese, more cheese, extra more cheese, a dash of slightly more cheese. Note: this is not for lactose-intoletant people.',
+};
 
 
 
@@ -42,7 +49,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+console.log (pizza.popularity)
 
 
 /*
@@ -52,7 +59,7 @@
     get the value.
 */
 
-//CODE HERE
+console.log (pizza.tags)
 
 
 /*
@@ -61,8 +68,9 @@
     
     Print the value of your new price variable.
 */
-
-//CODE HERE
+pizza.price = '15.99'
+let {price} = pizza
+console.log(price)
 
 
 /*
@@ -72,7 +80,8 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let {category} = pizza
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////

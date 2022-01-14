@@ -21,8 +21,14 @@
     'Welcome back, Andrew'
 */
 
-//CODE HERE
 
+const greetUser = username => {
+    
+    return  username
+}
+let username = "Andrew"
+
+console.log ("Welcome back, " + username)
 
 
 
@@ -49,7 +55,12 @@
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//CODE HERE
+let zipcode = 85205
+const canWeDeliver = zipcode 
+if (zipcode = deliveryAreaZipCodes) {
+    console.log ("You're in our delivery zone!")
+} else {console.log ("Sorry, we can't deliver to that address")
+}
 
 
 
