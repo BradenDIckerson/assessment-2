@@ -29,7 +29,9 @@
     stored on the object.
 */
 
-//CODE HERE
+class Ticket {
+    constructor(items, orderTime, customerId)
+}
 
 
 
