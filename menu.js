@@ -96,7 +96,59 @@ console.log(category)
     data in some functions that you'll write.
 */
 
-//CODE HERE
+const foodArr = [
+ const hamburger = {
+    name: 'Texas Slammer', 
+    price: '8.99',
+    category: 'Meal',
+    popularity: '8/10',
+    rating: '4 stars',
+    tags: 'Glueten free. 1000 calories.',
+};
+
+const hotdog = {
+    name: 'Glizzy Gobbler', 
+    price: '4.99',
+    category: 'Main Course',
+    popularity: '5/10',
+    rating: '3 stars',
+    tags: '650 calories. Toppings included.',
+};
+
+
+
+const slushy = {
+    name: 'Automatic brainfreeze', 
+    price: '2.99',
+    category: 'Drink',
+    popularity: '6/10',
+    rating: '2.5 stars',
+    tags: 'Gluten-free. Sugar-free. No high-fructose corn syrup.',
+};
+
+
+const chickenNuggets = {
+    name: 'Little guys', 
+    price: '6.99',
+    category: 'Side/ main meal',
+    popularity: '5/10',
+    rating: '2 stars',
+    tags: '6 chicken tenders. Made with real Chicken.',
+};
+
+const sushi = {
+    name: 'Fish Fellet', 
+    price: '15.99',
+    category: 'Side-dish',
+    popularity: '9/10',
+    rating: '4 stars',
+    tags: '12 pieces. Vegitarian platter optional. ',
+}
+];
+
+
+
+
 
 
 
@@ -112,8 +164,8 @@ console.log(category)
     your food objects has.
 */
 
-//CODE HERE
-
+const filteredFood = foodArr.filter ()
+console.log (filteredFood)
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
