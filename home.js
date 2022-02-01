@@ -81,8 +81,21 @@ if (zipcode = deliveryAreaZipCodes) {
     Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
+function canWeDeliverTwo (zipcode) {
+     zipcode = [85205, 85204, 85203, 85213, 85206]
+    console.log(zipcode.includes(85203))
+}
+    canWeDeliverTwo()
 
+
+    function canWeDeliverThree (zipcode) {
+        zipcode = [85205, 85204, 85203, 85213, 85206]
+        for (let [] in zipcode ) {
+            console.log(zipcode.includes(85213))
+        }
+    }
+    
+        canWeDeliverThree()
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -117,8 +130,8 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
-
+deals[0].title = deals[0].title.replace('15%', '10%')
+// console.log(deals)
 
 
 /*
@@ -134,4 +147,5 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+deals[1].desc = deals[1].desc.replace('March', 'April')
+console.log(deals)

@@ -34,8 +34,8 @@ const cart = [
 ]
 
 const reduced = cart.reduce(function(acc, curr){
-    return acc + curr
-})
+    return acc + curr.price
+}, 0)
 console.log (reduced)
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
@@ -55,10 +55,12 @@ console.log (reduced)
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+function calcFinalPrice (cartTotal, couponValue, tax) {
 
+return (cartTotal * tax) + cartTotal - couponValue
 
-
+}
+console.log(calcFinalPrice(100, 5, 0.10))
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
@@ -89,4 +91,9 @@ console.log (reduced)
     guidelines.
 */
 
-//CODE HERE
+let customer = {
+    name: 'Braden',
+    phone: "819-288-8499",
+    cc: 345245234523, 
+    address: '123 ave' 
+}

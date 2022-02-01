@@ -97,46 +97,46 @@ console.log(category)
 */
 
 const foodArr = [
- const hamburger = {
+     {
     name: 'Texas Slammer', 
     price: '8.99',
     category: 'Meal',
     popularity: '8/10',
     rating: '4 stars',
-    tags: 'Glueten free. 1000 calories.',
-};
+    tags: 'Glueten-free. 1000 calories.',
+},
 
-const hotdog = {
+ {
     name: 'Glizzy Gobbler', 
     price: '4.99',
     category: 'Main Course',
     popularity: '5/10',
     rating: '3 stars',
     tags: '650 calories. Toppings included.',
-};
+},
 
 
 
-const slushy = {
+{
     name: 'Automatic brainfreeze', 
     price: '2.99',
     category: 'Drink',
     popularity: '6/10',
     rating: '2.5 stars',
     tags: 'Gluten-free. Sugar-free. No high-fructose corn syrup.',
-};
+},
 
 
-const chickenNuggets = {
+ {
     name: 'Little guys', 
     price: '6.99',
     category: 'Side/ main meal',
     popularity: '5/10',
     rating: '2 stars',
     tags: '6 chicken tenders. Made with real Chicken.',
-};
+},
 
-const sushi = {
+{
     name: 'Fish Fellet', 
     price: '15.99',
     category: 'Side-dish',
@@ -144,7 +144,7 @@ const sushi = {
     rating: '4 stars',
     tags: '12 pieces. Vegitarian platter optional. ',
 }
-];
+]
 
 
 
@@ -164,8 +164,8 @@ const sushi = {
     your food objects has.
 */
 
-const filteredFood = foodArr.filter ()
-console.log (filteredFood)
+const glutenFree = foodArr.filter ((foodObj) => foodObj.tags.split(' ').includes('Gluten-free.'))
+// console.log (glutenFree)
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
@@ -209,14 +209,29 @@ console.log (filteredFood)
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+function filterByProperty(property, number, type) {
+let filterFood = foodArr.filter(function (foodObj){
+    if (type === 'above') {
+        return parseInt(foodObj[property]) > number; 
+    } else {
+        return parseInt(foodObj[property]) < number;
+    }
+}); 
+    return filterFood
+}
+
+
+// console.log(parseInt('9/10'))
+
+
 
 
 /*
-    Invoke the `filterByProperty` function passing
-    in a value for each paramter.
+Invoke the `filterByProperty` function passing
+in a value for each paramter.
 
-    You'll have to console.log to see the filtered array
+You'll have to console.log to see the filtered array
 */
 
+console.log(filterByProperty("popularity", 6, "above"))
 //CODE HERE
